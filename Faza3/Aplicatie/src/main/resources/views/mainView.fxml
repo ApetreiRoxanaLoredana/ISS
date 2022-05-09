@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="mainBorder" layoutX="92.0" layoutY="81.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox fx:id="vBoxMenu" prefHeight="400.0" prefWidth="84.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnBorrowBooks" mnemonicParsing="false" onAction="#clickBtnBorrowBooks" prefHeight="61.0" prefWidth="105.0" text="Borrow books" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnRequestsBorrow" mnemonicParsing="false" onAction="#clickBtnRequestBorrow" prefHeight="61.0" prefWidth="105.0" text="Requests borrow" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnBorrows" mnemonicParsing="false" onAction="#clickBtnBorrows" prefHeight="61.0" prefWidth="105.0" text="Borrows" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnBooks" mnemonicParsing="false" onAction="#clickBtnBooks" prefHeight="61.0" prefWidth="105.0" text="Books" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

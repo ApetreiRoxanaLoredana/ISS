@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.Imprumut"
+           table="Imprumuturi">
+        <id name="id" column="idImprumut">
+            <generator class="increment"/>
+        </id>
+
+        <property name="statusImprumut">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">domain.StatusImprumut</param>
+                <param name="type">12</param>
+            </type>
+        </property>
+
+        <property name="data" type="LocalDate" column="data"/>
+        <many-to-one
+                name="utilizator"
+                cascade="all"
+                column="idUtilizator"/>
+        <many-to-one
+                name="carte"
+                cascade="all"
+                column="idCarte"/>
+
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="21.0" layoutY="81.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="idBorrowColumn" prefWidth="75.0" text="Id borrow" />
+                  <TableColumn fx:id="idUserColumn" prefWidth="75.0" text="Id user" />
+                <TableColumn fx:id="usernameColumn" prefWidth="75.0" text="Username" />
+                  <TableColumn fx:id="idBookColumn" prefWidth="75.0" text="Id book" />
+                  <TableColumn fx:id="bookTitleColumn" prefWidth="75.0" text="book title" />
+                  <TableColumn fx:id="dateColumn" prefWidth="75.0" text="date" />
+                  <TableColumn fx:id="selectColumn" prefWidth="75.0" text="select" />
+              </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Button fx:id="btnAccept" mnemonicParsing="false" onAction="#clickBtnAccept" prefHeight="51.0" prefWidth="75.0" text="Accept" />
+                  <Button fx:id="btnRejected" mnemonicParsing="false" onAction="#clickBtnRejected" prefHeight="51.0" prefWidth="79.0" text="Rejected" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
